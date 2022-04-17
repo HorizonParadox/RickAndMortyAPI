@@ -53,7 +53,7 @@
           android:fontFamily="sans-serif-light"
           android:textColor="@color/characterHeader"
           android:textSize="16sp"
-          tools:text="Race:" />
+          android:text="Race:" />
 
       <TextView
           android:id="@+id/characterSpeciesTextView"
@@ -78,7 +78,7 @@
           android:fontFamily="sans-serif-light"
           android:textColor="@color/characterHeader"
           android:textSize="16sp"
-          tools:text="Gender:" />
+          android:text="Gender:" />
 
       <TextView
           android:id="@+id/characterGenderTextView"

@@ -40,16 +40,24 @@ android {
 dependencies {
 
     implementation libs.material
-    //implementation libs.constraintLayout
     implementation libs.fragment
     implementation libs.appcompat
 
     implementation libs.coreKtx
     implementation libs.glide
+
+    implementation libs.retrofitConverter
+    implementation libs.retrofit
+    implementation libs.retrofitLogging
+    implementation libs.coroutines
+
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
     //implementation libs.adapterDelegates
     //implementation libs.adapterDelegatesViewBinding
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
 }

@@ -2,6 +2,7 @@ package com.github.HorizonParadox.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.github.HorizonParadox.APITest.QuestListModel
 import com.github.HorizonParadox.R
 import com.github.HorizonParadox.databinding.ActivityMainBinding
 
