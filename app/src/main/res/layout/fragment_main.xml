@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:background="@color/charactersRecyclerViewBackground">
+    tools:background="@color/charactersRecyclerViewBackground"
+    android:id="@+id/mainFragment">
 
   <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/recyclerView"

@@ -8,10 +8,12 @@
     android:layout_marginBottom="16dp"
     android:background="@color/characterCardBackground">
 
-  <ImageView
+  <de.hdodenhof.circleimageview.CircleImageView
       android:id="@+id/characterImageView"
-      android:layout_width="200dp"
-      android:layout_height="wrap_content"
+      app:civ_border_width="2dp"
+      app:civ_border_color="@color/characterText"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
       android:src="@drawable/test_image"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +39,7 @@
         android:fontFamily="sans-serif-medium"
 
         android:textColor="@color/characterText"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         tools:text="Annie" />
 
@@ -45,14 +47,14 @@
         android:id="@+id/speciesLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical">
 
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:fontFamily="sans-serif-light"
-          android:text="Race:"
+          android:text="@string/race_title"
           android:textColor="@color/characterHeader"
           android:textSize="14sp" />
 
@@ -70,14 +72,14 @@
         android:id="@+id/genderLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical">
 
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:fontFamily="sans-serif-light"
-          android:text="Gender:"
+          android:text="@string/gender_title"
           android:textColor="@color/characterHeader"
           android:textSize="14sp" />
 

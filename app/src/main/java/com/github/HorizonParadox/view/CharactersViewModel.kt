@@ -21,6 +21,4 @@ class CharactersViewModel(val binding: ItemSingleCharacterBinding) :
 
 
 
-
-
 }

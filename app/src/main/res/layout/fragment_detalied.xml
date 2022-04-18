@@ -5,32 +5,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    tools:background="@color/charactersRecyclerViewBackground">
 
-  <ImageView
+    android:background="@color/charactersRecyclerViewBackground"
+    android:id="@+id/detailFragment">
+
+  <de.hdodenhof.circleimageview.CircleImageView
       android:id="@+id/characterImageView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
+      android:layout_width="250dp"
+      android:layout_height="250dp"
+      app:civ_border_width="2dp"
+      app:civ_border_color="@color/characterText"
+      app:layout_constraintEnd_toEndOf="@id/characterInfo"
+      app:layout_constraintStart_toStartOf="@id/characterInfo"
       app:layout_constraintTop_toTopOf="parent"
       tools:ignore="ContentDescription"
-      tools:src="@drawable/test_image" />
+      tools:src="@drawable/test_image"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"/>
 
   <LinearLayout
       android:id="@+id/characterInfo"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
+      android:layout_width="300dp"
+      android:layout_height="300dp"
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
       android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
       android:gravity="center"
       android:orientation="vertical"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@id/characterImageView"
-      tools:background="@color/characterCardBackground">
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:background="@color/characterCardBackground">
 
     <TextView
         android:id="@+id/characterNameTextView"
@@ -53,7 +61,8 @@
           android:id="@+id/statusImageView"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-          tools:src="@drawable/status_logo_alive" />
+          tools:src="@drawable/status_logo_alive"
+          tools:ignore="contentDescription"/>
 
       <TextView
           android:id="@+id/characterStatusTextView"
@@ -70,7 +79,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:fontFamily="sans-serif-light"
-          android:text=" - "
+          android:text="@string/lowercase"
           android:textColor="@color/characterText"
           android:textSize="18sp" />
 
@@ -96,7 +105,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:fontFamily="sans-serif-light"
-          android:text="Gender:"
+          android:text="@string/gender_title"
           android:textColor="@color/characterHeader"
           android:textSize="14sp" />
 
@@ -123,7 +132,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:fontFamily="sans-serif-light"
-          android:text="Last known location:"
+          android:text="@string/lsat_location_title"
           android:textColor="@color/characterHeader"
           android:textSize="14sp" />
 
@@ -151,7 +160,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:fontFamily="sans-serif-light"
-          android:text="Number of Episode: "
+          android:text="@string/number_of_episode_title"
           android:textColor="@color/characterHeader"
           android:textSize="14sp" />
 

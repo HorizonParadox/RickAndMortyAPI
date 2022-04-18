@@ -1,4 +1,9 @@
 <resources>
   <string name="app_name">RickAndMortyAPI</string>
   <string name="NameCharacter">Frank Palicky</string>
+  <string name="lowercase">-</string>
+  <string name="gender_title">Gender:</string>
+  <string name="lsat_location_title">Last known location:</string>
+  <string name="number_of_episode_title">Number of Episode:</string>
+  <string name="race_title">Race:</string>
 </resources>
