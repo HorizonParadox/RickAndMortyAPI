@@ -6,9 +6,9 @@ import retrofit2.http.Query
 
 interface QuestAPI {
   @GET("/api/character/")
-  fun getCharacter(@Query("page") page: Int): Call<CharacterListResponse>
+  fun getCharacter(@Query("page") page: Int): Call<CharactersListResponse>
 
   @GET("./api/character")
-  fun getCharacterList(): Call<CharacterListResponse>
+  fun getCharacterList(): Call<CharactersListResponse>
 
 }

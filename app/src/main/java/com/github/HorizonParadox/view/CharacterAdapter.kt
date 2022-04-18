@@ -10,7 +10,6 @@ import com.github.HorizonParadox.databinding.ItemSingleCharacterBinding
 class CharacterAdapter(private val list: List<CharacterResponse>) :
   RecyclerView.Adapter<CharactersViewModel>() {
 
-
   override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharactersViewModel {
     val binding =
       ItemSingleCharacterBinding.inflate(LayoutInflater.from(parent.context), parent, false)
